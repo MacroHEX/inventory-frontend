@@ -1,0 +1,48 @@
+// https://css-tricks.com/snippets/css/a-guide-to-flexbox/
+
+.spacer {
+  flex: 1 1 auto;
+}
+
+.full-width {
+  width: 100%;
+}
+
+// ::: SECTION USES
+//
+.section-cols {
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+  margin: 10px;
+}
+
+.section-col {
+  display: flex;
+  flex-direction: column;
+  /*min-width: 250px;*/
+}
+
+.section-col-main {
+  display: flex;
+  flex-direction: column;
+  /*min-width: 450px;*/
+}
+
+.section-rows {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  margin: 10px;
+}
+
+.section-row {
+  display: flex;
+  flex-direction: row;
+}
+
+.section-row-main {
+  display: flex;
+  flex-direction: row;
+  /*min-height: 450px;*/
+}

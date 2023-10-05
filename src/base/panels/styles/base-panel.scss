@@ -1,0 +1,30 @@
+@import "../../styles/base";
+
+.panel {
+  margin: 10px;
+}
+
+.section-columns {
+  display: grid;
+  grid-template-columns: auto 1fr auto;
+  grid-template-rows: 1fr;
+  grid-gap: 0;
+  grid-template-areas:
+    "panelleft panelmain panelright";
+  /*height: 100%;*/
+  /*overflow: auto;*/
+}
+
+.section-left {
+  grid-area: panelleft;
+  margin-right: 15px;
+}
+
+.section-main {
+  grid-area: panelmain;
+  margin-right: 15px;
+}
+
+.section-right {
+  grid-area: panelright;
+}

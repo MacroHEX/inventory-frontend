@@ -1,0 +1,35 @@
+@import "base-frame";
+
+.frame-main-layout {
+  display: grid;
+  grid-template-rows: auto 1fr auto;
+  grid-template-columns: 1fr;
+  grid-gap: 0;
+  grid-template-areas:
+    "header header"
+    "content context"
+    "footer footer";
+  height: 100vh;
+  /*background-color: #eaeaea;*/
+}
+
+.frame-main-header {
+  grid-area: header;
+
+}
+
+.frame-main-content {
+  grid-area: content;
+}
+
+.frame-main-context {
+  /*grid-area: context;*/
+}
+
+/*
+.frame-app-menu {
+}*/
+
+.frame-main-footer {
+  grid-area: footer;
+}

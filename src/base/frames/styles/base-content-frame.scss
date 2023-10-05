@@ -1,0 +1,32 @@
+@import "base-frame";
+
+.frame-content-layout {
+  display: grid;
+  grid-template-columns: auto 1fr auto;
+  grid-template-rows: 1fr auto;
+  grid-gap: 15px;
+  grid-template-areas:
+    "menu panel context"
+    "menu footer footer";
+  height: 100%;
+  /*background-color: #eaeaea;*/
+}
+
+.frame-content-menu {
+  grid-area: menu;
+  overflow: auto;
+}
+
+.frame-content-panel {
+  grid-area: panel;
+  overflow: auto;
+}
+
+.frame-content-context {
+  grid-area: context;
+  overflow: auto;
+}
+
+.frame-content-footer {
+  grid-area: footer;
+}

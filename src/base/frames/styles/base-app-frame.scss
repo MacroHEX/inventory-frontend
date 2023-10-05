@@ -1,0 +1,16 @@
+@import "base-frame";
+
+.frame-app-layout {
+  display: grid;
+  grid-template-rows: 1fr;
+  grid-template-columns: 1fr;
+  grid-gap: 0;
+  grid-template-areas:
+    "main";
+  height: 100vh;
+  ///*background-color: #eaeaea;
+}
+
+.frame-app-main {
+  grid-area: main;
+}

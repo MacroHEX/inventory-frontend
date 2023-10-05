@@ -1,0 +1,29 @@
+@import "base-component";
+
+/* Table Root Container */
+.list-root {
+}
+
+/* Base Table */
+.mat-table {
+  width: 95%;
+}
+
+/* Base Row */
+tr.list-row {
+}
+
+tr.list-row:hover {
+  background: whitesmoke;
+  cursor: pointer;
+}
+
+/* Expanded Row */
+tr.list-row-expanded {
+  height: 0 !important;
+}
+
+tr.list-row:not(.list-row-expanded):hover {
+  background: whitesmoke;
+  cursor: pointer;
+}
