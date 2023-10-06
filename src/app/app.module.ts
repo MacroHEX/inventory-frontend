@@ -9,6 +9,7 @@ import {MaterialModule} from "../extras/material/material.module";
 import {HttpClientModule} from "@angular/common/http";
 import {DatePipe} from "@angular/common";
 import {MAT_FORM_FIELD_DEFAULT_OPTIONS} from "@angular/material/form-field";
+import {DashboardModule} from "../mods/dashboard/dashboard.module";
 
 @NgModule({
   declarations: [
@@ -22,6 +23,9 @@ import {MAT_FORM_FIELD_DEFAULT_OPTIONS} from "@angular/material/form-field";
 
     // extras
     MaterialModule,
+
+    // mods
+    DashboardModule,
 
     // ng
     BrowserModule,

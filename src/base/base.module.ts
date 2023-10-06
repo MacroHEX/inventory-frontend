@@ -5,6 +5,7 @@ import {BrowserModule} from "@angular/platform-browser";
 import {FormsModule, ReactiveFormsModule} from "@angular/forms";
 import {BrowserAnimationsModule} from "@angular/platform-browser/animations";
 import {MAT_FORM_FIELD_DEFAULT_OPTIONS} from "@angular/material/form-field";
+import {RouterModule} from "@angular/router";
 
 export const APP_PARENT = new InjectionToken<{}>("AppParent");
 export const APP_DTO = new InjectionToken<{}>("AppDTO");
@@ -18,6 +19,7 @@ export const APP_DTO = new InjectionToken<{}>("AppDTO");
 
     // ng
     CommonModule,
+    RouterModule,
     BrowserModule,
     FormsModule,
     ReactiveFormsModule,
