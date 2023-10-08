@@ -1,21 +1,23 @@
-import {NgModule} from '@angular/core';
-import {CommonModule, DatePipe} from '@angular/common';
+import { NgModule } from '@angular/core';
+import { CommonModule } from '@angular/common';
 import {BaseModule} from "../../base/base.module";
 import {MaterialModule} from "../../extras/material/material.module";
 import {BrowserModule} from "@angular/platform-browser";
 import {FormsModule, ReactiveFormsModule} from "@angular/forms";
 import {BrowserAnimationsModule} from "@angular/platform-browser/animations";
-import {DashboardHomePanelComponent} from './panels/dashboard-home-panel/dashboard-home-panel.component';
-import {DashboardPanelComponent} from './panels/dashboard-panel/dashboard-panel.component';
 import {SharedModule} from "../shared/shared.module";
 import {RouterOutlet} from "@angular/router";
-import {CategoryModule} from "../category/category.module";
+import { CategoryPanelComponent } from './panels/category-panel/category-panel.component';
+import { CategoryListComponent } from './components/category-list/category-list.component';
+import { CategoryDialogManagerComponent } from './dialogs/category-dialog-manager/category-dialog-manager.component';
+
 
 
 @NgModule({
   declarations: [
-    DashboardPanelComponent,
-    DashboardHomePanelComponent,
+    CategoryPanelComponent,
+    CategoryListComponent,
+    CategoryDialogManagerComponent
   ],
   imports: [
     //
@@ -23,9 +25,6 @@ import {CategoryModule} from "../category/category.module";
 
     // extras
     MaterialModule,
-
-    // mods
-    CategoryModule,
 
     // ng
     BrowserModule,
@@ -35,11 +34,6 @@ import {CategoryModule} from "../category/category.module";
     CommonModule,
     SharedModule,
     RouterOutlet,
-  ],
-  providers: [
-    DatePipe,
-  ],
+  ]
 })
-
-export class DashboardModule {
-}
+export class CategoryModule { }

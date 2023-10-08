@@ -1,0 +1,28 @@
+<mat-card>
+  <h2 class="center-text"> Listado de Categorías</h2>
+
+  <mat-card-header>
+    <div>
+      <mat-form-field>
+        <mat-label>Categoría</mat-label>
+        <input matInput #input (keyup)="find(input.value)">
+      </mat-form-field>
+    </div>
+
+    <div>
+      <ul>
+        <li>
+          <button mat-raised-button color="primary" (click)="openCategoryDialog()">Agregar Categoría</button>
+        </li>
+      </ul>
+    </div>
+  </mat-card-header>
+
+  <div mat-card-image></div>
+
+  <mat-card-content>
+    <app-category-list #list (action)="onListAction($event)"></app-category-list>
+
+  </mat-card-content>
+
+</mat-card>

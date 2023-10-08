@@ -1,0 +1,42 @@
+<h1 mat-dialog-title>{{title}}</h1>
+
+<mat-divider></mat-divider>
+
+<div mat-dialog-content>
+
+  <div class="section-cols">
+
+    <form [formGroup]="mainForm" class="section-col-main">
+
+      <mat-form-field>
+        <mat-label>Nombre</mat-label>
+        <input matInput formControlName="nameCtrl" [readonly]="readOnly">
+      </mat-form-field>
+
+      <mat-form-field>
+        <mat-label>Descripción</mat-label>
+        <input matInput formControlName="descCtrl" [readonly]="readOnly">
+      </mat-form-field>
+
+    </form>
+
+  </div>
+
+</div>
+
+<mat-divider></mat-divider>
+
+<div mat-dialog-actions [align]="'end'">
+  <button mat-raised-button (click)="closeDialog()" *ngIf="readOnly">
+    <mat-icon>close</mat-icon>
+    Cerrar
+  </button>
+  <button mat-raised-button (click)="closeDialog()" *ngIf="!readOnly">
+    <mat-icon>cancel</mat-icon>
+    Cancelar
+  </button>
+  <button mat-raised-button [color]="'primary'" (click)="performDialog()" *ngIf="!readOnly">
+    <mat-icon>save</mat-icon>
+    Guardar
+  </button>
+</div>
